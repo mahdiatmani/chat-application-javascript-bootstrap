@@ -11,7 +11,7 @@ function login(){
             const cookies = document.cookie;
             window.location.href='dashboard.html';
 }else{
-    if(document.getElementById("user").value==""){
+    if(document.getElementById("user").value==" "){
         startShake();
 
     }else{
