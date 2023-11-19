@@ -1,7 +1,8 @@
 
 function login(){
+    //cookies will expires after a min to test the login after change to 1h
     let dateExpiration = new Date();
-    dateExpiration.setTime(dateExpiration.getTime()+ 1 * 3600 * 1000);
+    dateExpiration.setTime(dateExpiration.getTime()+ 1 * 600 * 1000);
     document.cookie = `user=${document.getElementById("user").value}; expires=${dateExpiration.toUTCString()}; path=/`;
     document.cookie = `password=${document.getElementById("password").value}; expires=${dateExpiration.toUTCString()}; path=/`;
 
